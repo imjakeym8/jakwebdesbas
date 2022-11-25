@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Designer Journey</title>
+<style>
+a {
+    text-decoration: none;
+}
+body {
+    margin: 0px 60px 0px 60px;
+}
+.alpha textarea {
+    resize: none;
+    width: 550px;
+    height: 50px;
+}
+#section-divider {
+    border-style: hidden;
+    margin: 50px 0px 50px 0px;
+}
+#container {
+    background-color: aquamarine;
+    padding: 50px 20px 50px 20px;
+    margin: 0px 0px 0px 0px;
+}
+#htmlform {
+    max-width: 50%;
+    float: left;
+    padding: 5px 0px 5px 0px;
+}
+#get_emmet {
+    max-width: 50%;
+    float: right;
+    padding: 10px 0px 0px 0px;
+}
+#break {
+    margin: 15px;
+}
+.alpha {
+    font-family: Tahoma;
+    font-size:medium;
+    color:darkslategray;
+    font-size:90%;
+}
+.beta {
+    color:navy;
+    font-family: sans-serif;
+    font-size: 90%;
+    white-space: normal;
+}
+.charlie {
+    color: green;
+    font-family: 'Segoe UI';
+    font-size:90%;
+}
+.delta {
+    font-family: 'Times New Roman', Times, serif;
+    white-space: normal;
+}
+.echo {
+    text-align: center;
+}
+.falcon {
+    float:left;
+    padding-bottom: 10px;
+}
+.gunner {
+    float:right;
+    margin: 20px 0px 0px 0px;
+    padding: 0px 10px 0px 10px;
+}
+.hatter {
+    color: grey;
+    font-size:18px;
+    text-align: center;
+    border-style: inset;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin: auto;
+}
+.india {
+    padding: 1%;
+    border-style: outset;
+    border-color: rgb(209, 27, 27);
+    border-width:4px;
+    background-color:#d85151;
+}
+</style>
+</head>
+<body>
+<!-- Today I will start to learn more about HTML forms-->
+<header>
+<div class="alpha">
+    <h2 id="htmlform">About HTML forms</h2>
+    <h4 id="get_emmet"><a href="https://docs.emmet.io/cheat-sheet/" target="_blank" rel="noopener noreferrer">My Emmet Cheat Sheet!</a></h4>
+    <h4 style="clear: left;">November 21 - November 24, 2022</h4>
+    <p>This will serve as my study diary/blog as I will be learning more about <b><em>HTML forms</em></b> by differentiating <ins>HTML form attributes, elements, input types,</ins> and many more...</p> 
+</div>
+</header>
+<div id="container">
+<section class="alpha echo india">
+    <form action="#" target="_self" method="GET">
+        <label for="fname"> First Name: </label>
+        <input type="text" id="fname" name="fname" placeholder="First Name">
+        <label for="lname"> Last Name: </label>
+        <input type="text" name="lname" id="lname" placeholder="Last Name">
+        <input type="submit" value="Get!">
+    </form>
+</section>
+<article class="beta">
+    <h3>Here, the HTML form tells the HTML:</h3>
+    <blockquote class="delta hatter">
+        "Get information from this form after a user types his first name, and last name from the text fields."
+    </blockquote>
+</article>
+<article class="charlie">
+    <p><strong>The HTML form attributes here include:</strong></p>
+    <dl>
+        <dt><b>"action"</b></dt>
+        <dd>- defines a location where the form is specified for,</dd>
+        <dt><b>"target"</b></dt>
+        <dd>- defines in what form displays the response after submitting the form; and,</dd>
+        <dt><b>"method"</b></dt>
+        <dd>- this is the HTTP method the browser uses to submit the form.</dd>
+    </dl> 
+    <p><b><ins>for this particular HTML form, it uses:</ins></b></p>
+    <dl>
+        <dt><b>"#"</b></dt>
+        <dd>- which the form response is specified for the same url where it is submitted;</dd>
+        <dt><b>"_self"</b></dt>
+        <dd>- which loads the response in the same HTML fram as the current one; and,</dd>
+        <dt><b>"GET"</b></dt>
+        <dd>- which data is created to the <em><b>"action"</b></em> attribute URI with a <em>'?'</em> as a separator, and URI is sent to the server.</dd>
+    </dl>
+</article>
+</div>
+<div id="section-divider"></div>
+<div id="container">
+<section class="alpha echo india">
+    <form action="#" target="_self" method="GET">
+        <label for="stablecoin">Please select a coin to be swapped:</label>
+        <select id="stablecoin" name="stablecoin">
+          <option value="eth">ETH</option>
+          <option value="btc">BTC</option>
+          <option value="bnb">BNB</option>
+          <option value="sol">SOL</option>
+          <option value="matic">MATIC</option>
+        </select>
+        <input type="submit" value="Swap to this coin!">
+      </form>
+</section>
+<article class="beta">
+    <h3>This HTML form is known as a drop-down list. This particular HTML form tells HTML:</h3>
+    <blockquote class="delta hatter">
+        "Get the information from the list of coins in a drop-down option a user chooses to swap a coin to."
+    </blockquote>
+</article>
+<article class="charlie">
+    <h3>The HTML elements included in this particular HTML form are:</h3>
+    <dl>
+        <dt><b>&lsaquo; select &rsaquo;</b> ; and, </dt>
+        <dt><b>&lsaquo; option &rsaquo;</b></dt>
+    </dl>
+    <p><strong>The HTML form attributes here are as listed, respectively:</strong></p>
+    <dl>
+        <dt><b>"id"</b></dt>
+        <dd>- a bookmark for users to jump to or an identifier by which it can be attributed to its corresponding CSS style;</dd>
+        <dt><b>"name"</b></dt>
+        <dd>- tells the name of the HTML element</dd>
+        <dt><b>"value"</b></dt>
+        <dd>- paired with the <b>&lsaquo; option &rsaquo;</b> element; it tells what a choice can be made inside a drop-down list. Multiple options with its own value can be added for more choices to be made.</dd>
+    </dl>
+</article>
+</div>
+<div id="section-divider"></div>
+<div id="container">
+<section class="alpha echo india">
+    <form action="#" target="_self" method="GET">
+        <textarea class="delta" style="float:left;word-wrap:break-word;" name="message">Please write your thoughts about cryptocurrency here in less than two sentences.</textarea>
+        <br><br>
+        <input type="submit" value="Submit Answer">
+      </form>
+</section>
+<article class="beta">
+    <h3>This is a textbox style HTML form. This HTML form tells HTML:</h3>
+    <blockquote class="delta hatter">
+        "Get the information from the answer a user submits on his/her thoughts about cryptocurrency inside a textbox."
+    </blockquote>
+</article>
+<article class="charlie">
+    <h3>The only HTML element included in this particular HTML form is:</h3>
+    <dl>
+        <dt><b>&lsaquo; textbox &rsaquo;</b></dt>
+        <dd>- defines a textbox HTML form where characters can be added and submitted.</dd>
+    </dl>
+</article>
+</div>
+<footer class="alpha">
+    <h3>Please stay tuned here for more HTML form updates. I will try to learn more very soon.</h3>
+</footer>
+<nav class="alpha">
+    <h3 class="falcon"><strong>Author: John Carlo N. Tacogue</strong></h3>
+    <div><a href="mailto:jc.tacogue@gmail.com" class="gunner"><b>Contact me!</b></a></div>
+    <div><a href="https://www.linkedin.com/in/john-carlo-tacogue-69b9311b3/" class="gunner" target="_blank" rel="noopener noreferrer"><b>LinkedIn</b></a></div>
+</nav>
+</body>
+</html>
