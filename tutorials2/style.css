@@ -4,35 +4,18 @@
     box-sizing: border-box;
 }
 
-.dotted-border {
+.column-container {
+    display: flex;
+    justify-content: space-evenly;
     border: 2px dotted olivedrab;
-    margin: 20px;
 }
 
-.inline {
-    display: inline;
-}
-
-.block {
-    display: block
-}
-
-.inline-block {
-    display: inline-block;
-}
-
-.lfloat {
-    float:left;
-}
-
-.rfloat {
-    float:right;
-}
-
-.dotted-border > p {
-    display: inline-block;
-    width:50%;
-    text-align:center;
+.column-container > p {
+    text-align: center;
+    width: 40%;
     border: 2px double olivedrab;
 }
+
+
+
 
