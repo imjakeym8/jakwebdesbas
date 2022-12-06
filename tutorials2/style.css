@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dotted-border {
+    border: 2px dotted olivedrab;
+    margin: 20px;
+}
+
+.inline {
+    display: inline;
+}
+
+.block {
+    display: block
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.lfloat {
+    float:left;
+}
+
+.rfloat {
+    float:right;
+}
+
+.dotted-border > p {
+    display: inline-block;
+    width:50%;
+    text-align:center;
+    border: 2px double olivedrab;
+}
+
