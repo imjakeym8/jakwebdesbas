@@ -17,16 +17,20 @@
     border: 2px double olivedrab;
 }
 
+.nav-box {
+    margin: 10px 125px 10px 125px;
+    padding: 5px 25px 5px 25px;
+}
+
 .nav-flex {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
 }
 
 .nav-flex img {
-    flex-basis: 200px;
-    min-width: 300px;
+    flex: 0 1 100px;
+    max-width: 120px;
+    flex-wrap: wrap;
 }
 
 .nav-flex p:nth-of-type(1) {
