@@ -1,8 +1,9 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+*/
 
 .column-container {
     display: flex;
@@ -16,6 +17,27 @@
     border: 2px double olivedrab;
 }
 
+.nav-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.nav-flex img {
+    flex-basis: 200px;
+    min-width: 300px;
+}
 
+.nav-flex p:nth-of-type(1) {
+    margin-left: auto;
+}
 
+.nav-flex p:nth-of-type(2) {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-flex p:nth-of-type(3) {
+    margin-right: auto;
+}
