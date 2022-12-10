@@ -1,17 +1,23 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 .column-container {
+    height: 200px;
+    border: 2px dotted olivedrab;
     display: flex;
     justify-content: space-evenly;
-    border: 2px dotted olivedrab;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 .column-container > p {
-    text-align: center;
-    width: 40%;
     border: 2px double olivedrab;
+    text-align: center;
+    flex-basis: 400px;
 }
 
 .nav-box {
@@ -41,4 +47,8 @@
 
 .nav-flex p:nth-of-type(3) {
     margin-right: auto;
+}
+
+@media screen {
+    
 }
