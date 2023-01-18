@@ -1,0 +1,43 @@
+body {
+    border: 5px solid lime;
+    border-radius: 5px;
+    background-color: beige;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+}
+.container {
+    display:grid;
+    grid-template-rows: 2fr 3fr 1fr;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+        'header header'
+        'aside main'
+        'footer footer';
+}
+
+div.container div {
+    border: 2px solid beige;
+    border-radius: 10px;
+    margin: 2px;
+}
+
+.item-1 {
+    grid-area: header;
+    background-color: aqua;
+}
+
+.item-2 {
+    grid-area: main;
+    background-color: aquamarine;
+}
+
+.item-3 {
+    grid-area: footer;
+    background-color: yellow;
+}
+
+.item-4 {
+    grid-area: aside;
+    background-color: orange;
+}
