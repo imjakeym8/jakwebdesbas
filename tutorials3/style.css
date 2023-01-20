@@ -28,8 +28,8 @@ div p {
     position: absolute;
     text-align: center;
     width: 100%;
-    bottom: 45%;
-    font-size: 12px;
+    bottom: 50%;
+    font-size: 2vw;
 }
 
 .item-1 {
