@@ -40,9 +40,6 @@
 }
 body {
     font-family: Poppins;
-    padding: 10px 10px 70px 10px;
-    margin 50px 10px 10px 10px;
-    border: 2px solid #ffa500;
     background-color: #fce5bd;
 }
 #nav {
