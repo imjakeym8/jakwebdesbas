@@ -19,6 +19,7 @@ body {
     */
     font: 0.5em Poppins;
     letter-spacing: 0.025em;
+    
 
     /*
     background-color: navajowhite;
@@ -28,6 +29,14 @@ body {
     background-position: center center;
     background-attachment: scroll;
     */
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+a:visited {
+    color: inherit;
 }
 
 .bold {
@@ -48,6 +57,7 @@ body {
 
 .hd-top > a {
     font-size: 1.25em;
+    color: yellow;
 }
 
 .hd-top > p {
@@ -78,6 +88,7 @@ body {
 
 .hd-main-list {
     width: 100%;
+    font-size: 0.65rem;
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
@@ -91,4 +102,43 @@ body {
     flex-grow: 1;
 }
 
+main {
+    margin: 0.10rem;
+    background-color: cornsilk;
+    height:300vw;
+    width:100vw;
+}
 
+[class*="ft-"] {
+    padding:0.25rem;
+    color: white;
+}
+
+.ft-legal {
+    background-color: lightslategrey;
+    background-size: cover;
+    background-image: url('pictures/desert.jpg');
+    background-repeat: no-repeat;
+    background-position: center 80%;
+    background-blend-mode: multiply;
+}
+
+.ft-legal > ul {
+    list-style: none;
+}
+
+.ft-legal-list {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+
+.ft-legal-list li {
+    margin: 0rem 0.25rem;
+}
+
+.ft-legal-list li:nth-of-type(2) {
+    flex-grow: 1;
+}
