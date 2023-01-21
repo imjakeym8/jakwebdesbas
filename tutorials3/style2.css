@@ -4,19 +4,91 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    src: url(fonts/Poppins-Regular.ttf);
+    font-family: Poppins; 
+}
+
 body {
+    /*
+    font-style: italic;
+    font-variant: normal; (default)
+    font-weight: bold;
+    font-size: 1em;
+    font-family: Poppins;
+    */
+    font: 0.5em Poppins;
+    letter-spacing: 0.025em;
+
     /*
     background-color: navajowhite;
     background-size: cover;
-    background-image: url('paper.jpg');
+    background-image: url('pictures/paper.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: scroll;
     */
 }
 
-.header {
-    
+.bold {
+    font-weight: bold;
+}
+
+[class*="hd-"] {
+    padding:0.25rem;
+    color: white;
+}
+
+.hd-top {
+    border: 2px ridge lightsalmon;
+    border-radius: 2px;
+    background-color: darkorange;
+    text-align: center;
+}
+
+.hd-top > a {
+    font-size: 1.25em;
+}
+
+.hd-top > p {
+    display:inline-block;
+    float: right;
+    padding: 0.1rem 0.25rem 0rem 0.25rem;
+    cursor: pointer;
+    background-color: transparent;
+    transition: background-color 0.5s;
+}
+
+.hd-top > p:hover {
+    background-color: lightslategray;
+}
+
+.hd-main {
+    background-color: lightslategrey;
+    background-size: cover;
+    background-image: url('pictures/desert.jpg');
+    background-repeat: no-repeat;
+    background-position: center 15%;
+    background-blend-mode: multiply;
+}
+
+.hd-main > ul {
+    list-style: none;
+}
+
+.hd-main-list {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.hd-main-list li {
+    margin: 0rem 1rem;
+}
+
+.hd-main-list li:nth-of-type(1) {
+    flex-grow: 1;
 }
 
 
