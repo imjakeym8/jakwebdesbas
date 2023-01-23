@@ -124,7 +124,6 @@ main {
 
 .container {
     max-width: 100%;
-    border: 5px solid grey;
 }
 .main-container {
     max-height: 768px;
