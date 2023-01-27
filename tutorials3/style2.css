@@ -22,11 +22,11 @@ body {
     font-size: 1em;
     font-family: Poppins;
     */
-    font: 0.5rem Poppins;
+    font-family: Poppins;
+    font-size: 0.5rem;
     letter-spacing: 0.025rem;
     background-color: white;
     
-
     /*
     background-color: navajowhite;
     background-size: cover;
@@ -37,10 +37,16 @@ body {
     */
 }
 
+body nav {
+    position: sticky;
+    top: 0;
+}
+
 a {
     color: inherit;
     text-decoration: none;
 }
+
 a:visited {
     color: inherit;
 }
@@ -72,14 +78,20 @@ a:visited {
     padding: 0.1rem 0.25rem 0rem 0.25rem;
     cursor: pointer;
     background-color: transparent;
-    transition: background-color 0.5s;
+    transition: background-color 1s;
 }
 
 .hd-top > p:hover {
     background-color: lightslategray;
 }
 
-.hd-main {
+[class^="nav-"] {
+    padding:0.25rem;
+    color: white;
+}
+
+.nav-main {
+    font-weight: bold;
     background-color: rgba(0, 0, 0, 0.9);
     background-size: cover;
     background-image: url('pictures/desert.jpg');
@@ -88,33 +100,35 @@ a:visited {
     background-blend-mode: multiply;
 }
 
-.hd-main > ul {
+.nav-main > ul {
     list-style: none;
 }
 
-.hd-main-list {
-    width: 100%;
+.nav-main-list {
     font-size: 0.65rem;
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
 }
 
-.hd-main-list li {
+.nav-main-list li {
     margin: 0rem 1rem;
 }
 
-.hd-main-list li:nth-of-type(1) {
+.nav-main-list li:nth-of-type(1) {
     flex-grow: 1;
 }
 
 main {
     /*padding: 0 1rem; */
+    min-height: 300vh;
     max-width:100vw;
     color: white;
     background-image: url('pictures/pinkviolet.png');
     background-size: cover;
+    background-position: center 15%;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 [class^="main-"] {
@@ -122,13 +136,9 @@ main {
     padding:0 0.75rem;
 }
 
-.container {
-    max-width: 100%;
-}
 .main-container {
-    max-height: 768px;
     display: grid;
-    grid-template-rows: 6fr repeat(3, minmax(10px, 35px)) 1fr 2fr;
+    grid-template-rows: 2fr repeat(3, minmax(35px, 0.5fr)) 1fr 1fr;
     grid-template-columns: 50% 50%;
     justify-items: stretch;
     align-items: end;
@@ -139,28 +149,55 @@ main {
     "👃 👉"
     "👄 👉"
     "📜 📜";
-    overflow: hidden;
     line-height: 1;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 640px) {
     /* Style for Mobile Devices */
 }
-@media screen and (min-width: 792px) {
+
+@media screen and (min-width: 641px) {
+    /* Style for Mobile Devices/Tablets */
+}
+
+@media screen and (min-width: 768px) {
     /* Style for PC/Mac */
+    body {
+        font-size: 0.75rem;
+    }
+
+    main {
+        background-position: center 45%;
+    }
+
+    .hd-main-list {
+        font-size: 0.85rem;
+        line-height: 200%;
+    }
+
+    .ft-legal-list {
+        font-size: 0.85rem;
+        line-height: 200%;
+    }
 }
 
 .poppins-bold {
     font-family: 'Poppins-Bold';
     font-weight: bold;
-    font-size: 3.5vw;
+    font-size: min(3.5vw, 32px);
 }
 
-.empty {
+.poppins {
+    font-family: 'Poppins';
+    font-weight: normal;
+    font-size: min(3.5vw, 24px);
+}
+
+.main-info {
     background-color: rgb(255, 0, 0, 0);
     grid-area: 📜;
     justify-self: stretch;
-    align-self: center;
+    align-self: start;
 }
 .empty-2 {
     background-color: rgba(255, 192, 203, 0);
@@ -190,7 +227,7 @@ main {
     grid-area: 👃;
 }
 .knowbody {
-    font-size: 12.5vw;
+    font-size: min(12vw, 120px);
     letter-spacing: -0.45rem;
     text-shadow: -1.5px -1.5px rgb(255, 0, 0);
     color: rgb(255, 143, 220);

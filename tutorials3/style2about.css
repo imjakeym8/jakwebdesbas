@@ -19,3 +19,11 @@
     line-height: 1.5;
     margin-bottom: 20px;
   }  
+
+  h2::before {
+    content:'';
+    background: red;
+    display: block;
+    width: 10px;
+    height: 10px;
+  }
