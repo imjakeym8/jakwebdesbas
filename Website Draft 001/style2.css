@@ -153,6 +153,12 @@ main {
 
 @media screen and (max-width: 640px) {
     /* Style for Mobile Devices */
+    main {
+        height: 90vh;
+    }
+    footer {
+        height: 10vh;
+    }
 }
 
 @media screen and (min-width: 641px) {
