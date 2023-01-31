@@ -2,9 +2,101 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0px 20px;
+}
+section {
+    height: 90vh;
+    display: grid;
+    place-items: center;
+}
+
+section p {
+    font-size: 12px;
+}
+
+footer {
+    border: 5px solid red;
+    display: grid;
+    place-items: center;
+}
+
+footer:first-of-type {
+    border-bottom: 2.5px solid red;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 10vh;
+}
+
+footer:first-of-type p::before {
+    content:"(updated 1/31/2023)";
+    font-style: italic;
+    font-size: 9px;
+    display: grid;
+    place-items: center;
+}
+footer:first-of-type p::after {
+    content:"[ please scroll down ]";
+    font-variant:small-caps;
+    font-weight: bold;
+    font-size: 9px;
+    display: grid;
+    place-items: center;
+}
+
+footer:last-of-type {
+    padding: 10px;
+    border-top: 2.5px solid red;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 12px;
+}
+
+footer li {
+    margin-left: 15px;
+    margin-bottom: 7px;
+    text-align: justify;
+    text-align-last: left;
+}
+
+li.relative {
+    position: relative;
+}
+
+span.absolute {
+    background-image: url('brushstroke.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    top: -15px;
+    left: 200px;
+    width: 47px;
+    height: 47px;
+}
+
+footer li:nth-of-type(3) {
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+}
+
+main {
+    display: none;
 }
 
 @media screen and (min-width: 400px) {
+    section {
+        display: none;
+    }
+
+    main {
+        height: 90vh;
+        display: block;
+    }
+
     .column-container {
         height: 200px;
         border: 2px dotted olivedrab;
@@ -27,13 +119,14 @@
     }
     
     .nav-flex {
+        margin: 0px 5px 0px 5px;
         display: flex;
         align-items: center;
     }
     
     .nav-flex img {
         flex: 0 1 100px;
-        max-width: 120px;
+        max-width: 100px;
         flex-wrap: wrap;
     }
     
@@ -53,7 +146,7 @@
 
 @media screen and (min-width: 768px) {
     .nav-box {
-        margin: 20px auto 20px auto;
+        margin: 10px auto 10px auto;
         padding: 5px 25px 5px 25px;
     }
 }

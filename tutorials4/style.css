@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+[class^="hd-"] {
+    padding:0.25rem;
+    color: white;
+}
+
+.hd-top {
+    border: 2px ridge lightsalmon;
+    border-radius: 2px;
+    background-color: rgb(255, 153, 0);
+    font-weight: bold;
+    text-align: center;
+}
+
+.hd-top > a {
+    font-size: 1.25em;
+    color: yellow;
+}
+
+.hd-top > p {
+    display:inline-block;
+    float: right;
+    padding: 0.1rem 0.25rem 0rem 0.25rem;
+    cursor: pointer;
+    background-color: transparent;
+    transition: background-color 1s;
+}
+
+.hd-top > p:hover {
+    background-color: lightslategray;
+}
+
+section:first-of-type {
+    background:peachpuff;
+}
+section:first-of-type p {
+    height: 20vh;
+    margin: 20px 0px;
+    border: 1px solid orange;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+section:first-of-type p::before {
+    content: "🌕";
+    position: absolute;
+    font-size: 1.25em;
+    left: 50%; /* move the icon 30px to the left */
+    display: block;
+}
+
+section:first-of-type p::after {
+    content: "🚀";
+    position: absolute;
+    left: 48.5%; /* position the icon at the right of the parent element */
+    display: block;
+}
+
+li {
+    list-style:none;
+    margin-left: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+footer ul {
+    background-color: peachpuff;
+    border: 5px solid orange;
+    border-top: 0.01px solid orange;
+}
+footer li {
+    list-style: armenian;
+    margin: 10px;
+    margin-left: 20px;
+    font-weight: normal;
+    text-align: justify;
+    text-align-last: left;
+}
+
+footer li:last-of-type {
+    font-size: 8px;
+}
+section:nth-of-type(2) {
+    height: 50vh;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+article > ul , aside > ul {
+    display: grid;
+    grid-template-rows: minmax(100px, 1fr);
+    grid-auto-rows: minmax(100px, 1fr);
+    grid-gap: 0.5em;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+article > ul > li {
+    border-left: 10px solid orange;
+    padding-left: 5px;
+}
+
+aside > ul > li {
+    padding-right: 5px;
+    text-align: right;
+}
+
+footer > p {
+    height: 20vh;
+    border: 5px solid orange;
+    background-color: peachpuff;
+    display: grid;
+    place-items: center;
+}
+
+footer > p::before {
+    content:"(updated: 2/1/2023)";
+    margin-top: 5vh;
+    font-style: italic;
+    font-size: 10px;
+    display: grid;
+    place-items: center;
+}
+
+footer > p::after {
+    content:'[please scroll down]';
+    margin-bottom: 5vh;
+    font-size: 9px;
+    font-variant: small-caps;
+    font-weight: bold;
+    display: grid;
+    place-items: center;
+}

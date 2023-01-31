@@ -5,18 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Ableton Copy</title>
+    <title>Applying Flexbox Wrap</title>
 </head>
 <body>
-<div class="nav-box nav-flex">
-        <img src="krabs.jpg" alt="krabs">
-        <p>Home</p>
-        <p>About</p>
-        <p>Contact</p>
-</div>
-<div class="column-container">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<main>
+        <div class="nav-box nav-flex">
+                <img src="krabs.jpg" alt="krabs">
+                <p>Home</p>
+                <p>About</p>
+                <p>Contact</p>
+        </div>
+        <div class="column-container">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+</main>
+<section>
+        <p>This site only works on screens with at least 400px wide.</p>
+</section>
+<footer>
+        <p><strong>What I learned:</strong></p>
+</footer>
+<footer>
+        <ul>
+                <li>CSS Flexbox is a great to align and position html elements and also a great way to design 2-dimensional pages. For me, this is what I use if I don't wish to have elements on top of another, that way it gives me more control and it eases my productivity. On the other hand, CSS Grid, with its capability to stack elements, gives a lot of versatility though it can get complicated for newbies like me if i tend to use it in all scenarios (LOL)</li>
+                <li>Media Queries are a great tool to display web pages at different screen sizes, but it gives me so much headache since I'd have to consider how to properly place elements. Not all elements will fit the way you desire since you will have to take note of unit measurements like font-sizes, the box layout of each element you put aka the size of what goes inside, around, before and after your content.</li>
+                <li class="relative">Dili gihapon ko maka move on sa imo, T------a <span class="absolute"></span>.</li>
+                <li>I applied <em>"display: none;"</em> in combination with media queries and it helped me control what I can make show/hide depending on the reader's screen size. <b>If you see a warning on your main screen, it means your screen width is too narrow; if you see an image of Mr. Krabs, it means you're viewing my webpage using a laptop, Mac, or tablet.</b></li>  
+        </ul>
+</footer>
 </div>
 </body>
 </html>
