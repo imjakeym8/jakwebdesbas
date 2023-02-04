@@ -5,6 +5,17 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+a:link {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+
 [class^="hd-"] {
     padding:0.25rem;
     color: white;
@@ -61,6 +72,27 @@ section:first-of-type p::after {
     position: absolute;
     left: 48.5%; /* position the icon at the right of the parent element */
     display: block;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav > .button {
+    font-size: 9px;
+    background-color:orange;
+    padding: 5px 10px;
+    border-style: none;
+    border-radius: 5px;
+    margin: 3px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 1s;
+}
+
+nav > .button:hover {
+    transform: translateY(-7.5px);
+    background-color:#f44336;
 }
 
 li {
