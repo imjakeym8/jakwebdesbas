@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+@font-face {
+    src: url(fonts/Poppins-Regular.ttf);
+    font-family: Poppins;
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url(fonts/Poppins-Bold.ttf);
+}
+
+main {
+    background-color: cadetblue;
+    height: 100vh;
+}
+
+.no-button {
+    background-color: transparent;
+    border: 3px solid black;
+    background-color: white;
+    border-radius: 100%;
+    padding: 0px 4px;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr 3fr;
+    grid-template-rows: 1fr;
+}
+
+#showhide {
+    /* create a function showhide() to change display:none; to display:block; */
+    display: none;
+}
+
+#close {
+    position: absolute;
+    top: 1%;
+    left: 97%;
+    color: black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+}
+
+main > div {
+    background-color: rgba(0, 0, 0, 0.5);
+    grid-column: 1 / 4;
+    grid-row: 1;
+    z-index: 2;
+}
+
+.button, .square {
+    height: 80px;
+    width: 140px;
+    border: 5px solid black;
+    border-radius: 8px;
+    justify-self: center;
+    align-self: center;
+}
+.button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #87ebe980;
+    z-index: 1;
+    transition: top 0.2s, left 0.2s;
+}
+
+.square {
+    background-color: white;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+/* ALWAYS MAKE SURE TO SET HEIGHT TO 100% or 100vh in the parent container*/
+.nav-container {
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+/* child elements only move within the height of parent container, no matter how much you center it*/
+/* Make sure to select the parent with the container class when editing child elements from a container, */
+.nav-container p {
+    height: 40px;
+    min-width: 180px;
+    margin: 20px 40px;
+    line-height: 200%;
+    text-align: center;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 8px;
+}
+
+main > .button:hover {
+    top: 48%;
+    left: 49%;
+}
