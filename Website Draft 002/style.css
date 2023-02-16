@@ -15,9 +15,7 @@
     src: url('fonts/FuturaPTLight.otf');
     font-weight: bolder;
 }
-body {
-    
-}
+
 a:visited {
     text-decoration: none;
     color: inherit;
@@ -41,12 +39,13 @@ div.headroom {
     height: 88px;
 }
 
-nav:nth-of-type(2) {
+#stickynav {
     top: 72px;
     left: 0;
     width: 100%;
-    position: absolute;
+    position: fixed;
     z-index: 1;
+    transition: top 0.3s;
 }
 
 ul {
@@ -145,7 +144,7 @@ figure:nth-of-type(2) {
 }
 
 .nav-container-2 {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: blue;
     padding: 20px 40px;
     height: 68px;
     display: flex;
