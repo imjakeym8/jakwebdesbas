@@ -94,7 +94,7 @@ article > p:nth-of-type(2) {
 }
 
 footer {
-    height: 94vh;
+    height: 55vw;
     width: 100%;
     border-top: 2px solid lightgray;
     padding: 9vw 8vw;
@@ -106,7 +106,7 @@ footer {
 }
 
 footer > * {
-    width: 100%; /*may need to remove*/
+    width: 100%; /*might delete this later */
     padding-bottom: 4vw;
     flex-grow: 1;
 }
@@ -118,6 +118,7 @@ footer > div > img {
 footer p {
     font-family: futura-pt-light;
 }
+
 figure:nth-of-type(2) {
     position: relative;
     display: flex;
@@ -230,12 +231,13 @@ figure:last-of-type > span > h1:last-of-type {
     border-bottom: 2px solid lightgray;
 }
 
-.nav-container-0 > span {
+.square {
     border: 5px solid black;
     margin: 0 40px;
     height: 28px;
     width: 60px;
 }
+
 
 .nav-container-0 ul {
     flex-grow: 1;
@@ -284,11 +286,6 @@ figure:last-of-type > span > h1:last-of-type {
 .nav-container-2 li:first-of-type {
     padding: 0 15px 0 0;
     color: #FF764D;
-}
-
-.square-logo {
-    border-radius: 8px;
-    border: 5px solid orange;
 }
 
 .image {
@@ -370,20 +367,130 @@ figure:last-of-type > span > h1:last-of-type {
     background-position: center;
 }
 
-.ft-grid {
+.ft-grid-a {
     display: grid;
-}
-
-.ft-ga {
-    grid-template-columns: 30% 30% 40%;
-    grid-template-rows: 1fr 1fr 1fr minmax(1fr, 1.5fr);
+    grid-template-columns: 1fr 1fr 1.3fr;
+    grid-template-rows: repeat(4, 30px) minmax(60px, 1fr);
     grid-template-areas: 
     "one h1 h1b"
     "two four seven"
-    "three five signup"
-    "social six";
+    "three five seven"
+    "social six signup";
 }
 
-.ft-gb {
+.ft-grid-a > h1, .ft-grid-b > h1 {
+    font-size: 1rem;
+}
+.ft-grid-a > p:first-child {
+    grid-area: one;
+}
 
+.ft-grid-a > p:nth-child(2) {
+    grid-area: two;
+}
+
+.ft-grid-a > p:nth-child(3) {
+    grid-area: three;
+}
+
+.ft-grid-a > div:nth-child(4) {
+    grid-area: social;
+}
+
+.ft-grid-a > h1:nth-child(5) {
+    grid-area: h1;
+}
+
+.ft-grid-a > p:nth-child(6) {
+    grid-area: four;
+}
+
+.ft-grid-a > p:nth-child(7) {
+    grid-area: five;
+}
+.ft-grid-a > p:nth-child(8) {
+    grid-area: six;
+}
+
+.ft-grid-a > h1:nth-child(9) {
+    grid-area: h1b;
+}
+
+.ft-grid-a > p:nth-child(10) {
+    grid-area: seven;
+}
+
+.ft-grid-a > div:last-child {
+    grid-area: signup;
+}
+
+.ft-grid-b {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.3fr;
+    grid-template-rows: repeat(4, 30px);
+    grid-template-areas: 
+    "h1 h1b h1c"
+    "p1 p1b lang"
+    "p2 p2b lang"
+    "p3 p2b lang"
+}
+
+.ft-grid-b > h1:first-child {
+    grid-area: h1;
+}
+
+.ft-grid-b > h1:nth-child(2) {
+    grid-area: h1b;
+}
+
+.ft-grid-b > h1:nth-child(3) {
+    grid-area: h1c;
+}
+
+.ft-grid-b > p:nth-child(4) {
+    grid-area: p1;
+}
+
+.ft-grid-b > p:nth-child(5) {
+    grid-area: p2;
+}
+
+.ft-grid-b > p:nth-child(6) {
+    grid-area: p3;
+}
+
+.ft-grid-b > p:nth-child(7) {
+    grid-area: p1b;
+}
+
+.ft-grid-b > p:nth-child(8) {
+    grid-area: p2b;
+}
+
+.ft-grid-b > div:last-child {
+    grid-area: lang;
+}
+
+.nav-container-3, .nav-container-4 {
+    display: flex;
+}
+
+.nav-container-3 > ul {
+    flex-grow: 1;
+}
+
+.nav-container-3 > span.square {
+    margin-left: 0;
+}
+
+.nav-container-4 li {
+    margin: 0 15px;
+}
+
+.nav-container-4 > li:first-child {
+    margin: 0 0 0 0;
+}
+
+.nav-container-4 > li:nth-child(6) {
+    flex-grow: 1;
 }
