@@ -35,6 +35,14 @@ header {
     justify-content: flex-end;
 }
 
+input {
+    border-radius: 0;
+    border-style: none;
+    background-color: white;
+}
+
+
+
 body > nav {
     height: 68px;
     background-color: rgb(255, 255, 255, 0.75);
@@ -97,7 +105,7 @@ footer {
     height: 55vw;
     width: 100%;
     border-top: 2px solid lightgray;
-    padding: 9vw 8vw;
+    padding: 9vw 7vw 9vw 8vw;
     background-color: pink;
     display: flex;
     flex-direction: column;
@@ -116,7 +124,7 @@ footer > div > img {
 }
 
 footer p {
-    font-family: futura-pt-light;
+    font-size: 1.225rem;
 }
 
 figure:nth-of-type(2) {
@@ -370,7 +378,7 @@ figure:last-of-type > span > h1:last-of-type {
 .ft-grid-a {
     display: grid;
     grid-template-columns: 1fr 1fr 1.3fr;
-    grid-template-rows: repeat(4, 30px) minmax(60px, 1fr);
+    grid-template-rows: repeat(3, 30px) minmax(60px, 1fr);
     grid-template-areas: 
     "one h1 h1b"
     "two four seven"
@@ -379,7 +387,7 @@ figure:last-of-type > span > h1:last-of-type {
 }
 
 .ft-grid-a > h1, .ft-grid-b > h1 {
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
 .ft-grid-a > p:first-child {
     grid-area: one;
@@ -422,6 +430,10 @@ figure:last-of-type > span > h1:last-of-type {
 
 .ft-grid-a > div:last-child {
     grid-area: signup;
+}
+
+input[name="emailadd"]:focus {
+    outline: 2px solid #0000ff;
 }
 
 .ft-grid-b {
@@ -475,12 +487,47 @@ figure:last-of-type > span > h1:last-of-type {
     display: flex;
 }
 
+footer form:last-child {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+form:last-of-type > input {
+    height: 70%;
+}
+
+form:last-of-type > input:first-child {
+    flex-grow: 1;
+    box-sizing: border-box;
+    padding: 15px;
+    font-size: 1.25rem;
+    background-color: rgb(225, 225, 225);
+}
+
+form:last-of-type > input::placeholder {
+    font-size: 1.25rem;
+    color:#6f6f6f;
+}
+
+form:last-of-type > input:last-child {
+    flex-basis: 110px;
+    font-size: 1.25rem;
+    color: white;
+    background-color: blue;
+}
+
+
 .nav-container-3 > ul {
     flex-grow: 1;
 }
 
 .nav-container-3 > span.square {
     margin-left: 0;
+    margin-right: 0;
+    height: 21px;
+    width: 45px;
 }
 
 .nav-container-4 li {
